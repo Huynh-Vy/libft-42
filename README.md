@@ -191,13 +191,22 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 Compares the most n characters of 2 string s1 and s2. The function stops comparing when reaching n character or encountering null terminator '/0' or finding mismatched character| Pointer to string s1 | Pointer to string s2 |  | Number of characters to be compared between 2 strings | 
 
 
-## [ft_memchr](ft_memchr.c)
+ ## [ft_memchr](ft_memchr.c)
 
-`char		*ft_strncmp(const char *s1, const char *s2, size_t n)`
+`void       *ft_memchr(const void *s, int c, size_t n)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:| :-----------
-Compares the most n characters of 2 string s1 and s2. The function stops comparing when reaching n character or encountering null terminator '/0' or finding mismatched character| Pointer to string s1 | Pointer to string s2 |  | Number of characters to be compared between 2 strings | 
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Scans the initial n bytes of s for the first instance of c | Memory area s| A character to search | The number of bytes | A pointer to the matching byte or NULL if the character does not occur in the given memory area
+
+
+ ## [ft_memcmp](ft_memcmp.c)
+
+`void       *ft_memcmp(void *dst, const void *src, size_t n)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------: | :-----------:
+Compares byte string s1 against byte string s2 | Memory area s1| Memory area s2 | The number of bytes | < 0 if s1 is less than s2, > 0 if s1 is graeter than s2, = 0 if s1 is equal to s2 
 
 
 ## [ft_strnstr](ft_strnstr.c)
