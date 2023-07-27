@@ -38,7 +38,7 @@ Libc functions | Additional functions
 [ft_strdup](#ft_strdup) 
 
 
-## [ft_isalpha](libft-42/ft_isalpha.c)
+## [ft_isalpha](./libft-42/ft_isalpha.c)
 
 `int        ft_isalpha(int c)`
 
