@@ -39,7 +39,7 @@ Libc functions | Additional functions
 [ft_strdup](#ft_strdup) 
 
 
-## [ft_isalpha](ft_isalpha.c)
+## [ft_isalpha](ft_isalpha.c){:target="_blank"}
 
 `int        ft_isalpha(int c)`
 
