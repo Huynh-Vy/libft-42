@@ -31,6 +31,7 @@ Libc functions | Additional functions
 [ft_strchr](#ft_strchr)	  | 
 [ft_strrchr](#ft_strrchr)	  | 
 [ft_strncmp](#ft_strncmp)   |
+[ft_memchr](#ft_memchr)	  | 
 [ft_memcmp](#ft_memcmp)	  | 
 [ft_strnstr](#ft_strnstr)	  | 
 [ft_atoi](#ft_atoi)  |
@@ -115,7 +116,7 @@ Description | Param. #1 | Param. #2 | Return Value
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
+Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap. | Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
 
 
 ## [ft_memmove](ft_memmove.c)
@@ -182,6 +183,15 @@ Locates the last occurrence of 'c' in the string pointed to by 's'. The terminat
 
 
 ## [ft_strncmp](ft_strncmp.c)
+
+`char		*ft_strncmp(const char *s1, const char *s2, size_t n)`
+
+Description | Param. #1 | Param. #2 | Param. #3 | Return Value
+:-----------: | :-----------: | :-----------: | :-----------:| :-----------
+Compares the most n characters of 2 string s1 and s2. The function stops comparing when reaching n character or encountering null terminator '/0' or finding mismatched character| Pointer to string s1 | Pointer to string s2 |  | Number of characters to be compared between 2 strings | 
+
+
+## [ft_memchr](ft_memchr.c)
 
 `char		*ft_strncmp(const char *s1, const char *s2, size_t n)`
 
