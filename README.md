@@ -279,7 +279,7 @@ Description | Param. #1 | Param. #2 | Return Value
 Allocates (with malloc) and returns  an array of strings obtained by splitting s using the character 'c' as a delimiter. The array must be ended by a NULL pointer|The string to be split |The delimiter character| The array of new strings result of the split. NULL if the allocation fails
 
 
-## [ft_atoi](ft_atoi.c)
+## [ft_itoa](ft_itoa.c)
 
 `char   ft_itoa(int n)`
 
