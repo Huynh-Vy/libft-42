@@ -19,36 +19,21 @@ There are 2 sections:
 ### List of functions
 Libc functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
-[ft_memset](#ft_memset)		|[ft_substr](#ft_substr)    | [ft_lstnew](#ft_lstnew)            | [ft_islower](#ft_islower) 
-[ft_bzero](#ft_bzero)		|[ft_strjoin](#ft_strjoin)  | [ft_lstadd_front](#ft_lstadd_front)| [ft_isupper](#ft_isupper) 
-[ft_memcpy](#ft_memcpy)		|[ft_strtrim](#ft_strjoin)  | [ft_lstsize](#ft_lstsize)          | [ft_isspace](#ft_isspace)   
-[ft_memccpy](#ft_memccpy)	|[ft_split](#ft_split)      | [ft_lstlast](#ft_lstlast)          | [ft_strndup](#ft_strndup)
-[ft_memmove](#ft_memmove)	|[ft_itoa](#ft_itoa)       | [ft_lstadd_back](#ft_lstadd_back)  | [ft_strcdup](#ft_strcdup)
-[ft_memchr](#ft_memchr)		|[ft_strmapi](#ft_strmapi)  | [ft_lstdelone](#ft_lstdelone)     | 
-[ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)    | 
-[ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)      | 
-[ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)| [ft_lstmap](#ft_lstmap)        | 
-[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|				| 
-[ft_strlcpy](#ft_strlcpy)	| 	|			| 
-[ft_strcat](#ft_strcat)		| 	| | 
-[ft_strlcat](#ft_strlcat)	| 	| | 
-[ft_strchr](#ft_strchr)		| 	| | 
-[ft_strrchr](#ft_strrchr)	| 	| | 
-[ft_strstr](#ft_strstr)		|   | | 
-[ft_strnstr](#ft_strnstr)	| 	| | 
-[ft_strcmp](#ft_strcmp)		| 	| | 
-[ft_strncmp](#ft_strncmp)	| 	| | 
-[ft_atoi](#ft_atoi)         | 	| | 
-[ft_isalpha](#ft_isalpha)	| 	| | 
-[ft_isdigit](#ft_isdigit)	| 	| |
-[ft_isalnum](#ft_isalnum)	|   | | 
-[ft_isascii](#ft_isascii)	|   | | 
-[ft_isprint](#ft_isprint)	|   | | 
-[ft_toupper](#ft_toupper)   |   | | 
-[ft_tolower](#ft_tolower)	|   | | 
-[ft_calloc](#ft_calloc)     |   | |
+[ft_atoi](#ft_atoi)  |  [ft_putchar_fd](#ft_putchar_fd)  | [ft_strncmp](#ft_strncmp.c)	|           
+[ft_bzero](#ft_bzero)		|  [ft_putendl_fd](#ft_putendl_fd)  | [ft_strnstr](#ft_strnstr.c)  | 
+[ft_calloc](#ft_calloc)  	|  [ft_putnbr_fd](#ft_putnbr_fd)  | [ft_strrchr](#ft_strrchr.c)	  |  
+[ft_isalnum](#ft_isalnum) |   [ft_putstr_fd](#ft_putstr_fd)  | [ft_strtrim](#ft_strtrim.c)   | 
+[ft_isalpha](#ft_isalpha) |   [ft_split](#ft_split)      | [ft_tolower](#ft_tolower.c) | 
+[ft_isascii](#ft_isascii)	|  [ft_strchr](#ft_strchr)	 | [ft_tolower](#ft_tolower.c)	 |  
+[ft_isdigit](#ft_isdigit) |  [ft_strdup](#ft_strdup)  |     
+[ft_isprint](#ft_isprint) |	[ft_striteri.c](#ft_striteri.c)  | 
+[ft_itoa](#ft_itoa)	|  [ft_strjoin.c](#ft_strjoin.c)  |         
+[ft_memchr](#ft_memchr)	|  [ft_strlcat.c](#ft_strlcat.c)|		
+[ft_memcmp](#ft_memcmp)	|  [ft_strlen](#ft_strlen)	|			
+[ft_memmove](#ft_memmove)	|  [ft_strlen](#ft_strlen) 	| 	
+[ft_memset](#ft_memset)	|  [ft_strmapi](#ft_strmapi.c) 	| 
 
-## [ft_memset](libft/ft_memset.c)
+## [ft_memset](libft_42/ft_memset.c)
 
 `void       *ft_memset(void *s, int c, size_t len)`
 
@@ -56,7 +41,7 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Fill with "len" bytes of "c" the memory of "s"| The string on which to operate | Value c (converted to an unsigned char) | The number of bytes | A pointer to the memory area s
 
-## [ft_bzero](libft/ft_bzero.c)
+## [ft_bzero](libft_42/ft_bzero.c)
 
 `void       *ft_bzero(void *s,  size_t n)`
 
@@ -64,7 +49,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
  Erases the data in the "n" bytes of the memory starting at the location pointed by "s" writing zeroes | The string on which to operate | The number of bytes | None
 
- ## [ft_memcpy](libft/ft_memcpy.c)
+ ## [ft_memcpy](libft_42/ft_memcpy.c)
 
 `void       *ft_memcpy(void *dst, const void *src, size_t n)`
 
@@ -72,7 +57,7 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
 
- ## [ft_memccpy](libft/ft_memccpy.c)
+ ## [ft_memccpy](libft_42/ft_memccpy.c)
 
 `void       *ft_memccpy(void *dst, const void *src, int c, size_t n)`
 
@@ -80,7 +65,7 @@ Description | Param. #1 | Param. #2 | Param. #3 | Param. #4 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies n bytes from memory area  src  to memory  area  dst, stopping when the character c is found, or after n characters are copied, whichever comes first. If copying takes place between objects that overlap, the behavior is undefined.| Memory area dst | Memory area src | A character to search | Number of bytes that memccpy() copied | A pointer to the next character in dst after c, or NULL if c was not found in the first n bytes
 
-## [ft_memmove](libft/ft_memmove.c)
+## [ft_memmove](libft_42/ft_memmove.c)
 
 `void       *ft_memmove(void *dst, const void *src, size_t len)`
 
@@ -88,7 +73,7 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies len bytes from the memory of src to dst. Memories may overlap. First, the bytes in src are copied into a temporary array and then to dst.| Memory area dst | Memory ares arc | The number of bytes | A pointer to the memory area dst
 
- ## [ft_memchr](libft/ft_memchr.c)
+ ## [ft_memchr](libft_42/ft_memchr.c)
 
 `void       *ft_memchr(const void *s, int c, size_t n)`
 
@@ -96,7 +81,7 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Scans the initial n bytes of s for the first instance of c | Memory area s| A character to search | The number of bytes | A pointer to the matching byte or NULL if the character does not occur in the given memory area
 
- ## [ft_memcmp](libft/ft_memcmp.c)
+ ## [ft_memcmp](libft_42/ft_memcmp.c)
 
 `void       *ft_memcmp(void *dst, const void *src, size_t n)`
 
@@ -104,21 +89,21 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Compares byte string s1 against byte string s2 | Memory area s1| Memory area s2 | The number of bytes | < 0 if s1 is less than s2, > 0 if s1 is graeter than s2, = 0 if s1 is equal to s2 
 
-## [ft_strlen](libft/ft_strlen.c) 
+## [ft_strlen](libft_42/ft_strlen.c) 
 `size_t     ft_strlen(const char *s)`
 
 Description | Param. #1 | Return Values
 :-----------: | :-----------: | :-----------:
 Calculates the length of the string pointed to by s, excluding the terminating null byte ('\0')	| The string to calculate | Number of characters in the string pointed to by s
 
-## [ft_strdup](libft/ft_strdup.c) 
+## [ft_strdup](libft_42/ft_strdup.c) 
 `char       *ft_strdup(const char *s))`
 
 Description | Param. #1 | Return Values
 :-----------: | :-----------: | :-----------:
 Duplicate string s1. Memory  for  the new string is obtained with malloc, and can  be  freed with free | The string to duplicate| A pointer   to  the  duplicated  string.  NULL  if  insufficient  memory  was available
 
-## [ft_strndup](libft/ft_strndup.c)
+## [ft_strndup](libft_42/ft_strndup.c)
 
 `char       *ft_strndup(const char *s, size_t n)`
 
