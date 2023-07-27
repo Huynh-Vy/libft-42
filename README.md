@@ -118,15 +118,6 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
 
 
- ## [ft_memccpy](ft_memccpy.c)
-
-`void       *ft_memccpy(void *dst, const void *src, int c, size_t n)`
-
-Description | Param. #1 | Param. #2 | Param. #3 | Param. #4 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies n bytes from memory area  src  to memory  area  dst, stopping when the character c is found, or after n characters are copied, whichever comes first. If copying takes place between objects that overlap, the behavior is undefined.| Memory area dst | Memory area src | A character to search | Number of bytes that memccpy() copied | A pointer to the next character in dst after c, or NULL if c was not found in the first n bytes
-
-
 ## [ft_memmove](ft_memmove.c)
 
 `void       *ft_memmove(void *dst, const void *src, size_t len)`
