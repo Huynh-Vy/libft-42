@@ -1,10 +1,5 @@
 # libft - VyHuynh
 
-### TOC
-* [What is libft?](#what-is-libft)
-* [What's in it?](#whats-in-it)
-* [List of functions](#list-of-functions)  Click to each function to see an explication
-
 ### What is libft?
 
 Libft is an individual project at [42][1] that requieres us to re-create some standard C library functions for future projects, and have a deeper understanding of data structures and basic algorithms. At 42 we are not allowed to use some standard libraries on our projects, so we have to keep growing this libary with our own functions as we go farther in the program.
@@ -17,21 +12,32 @@ There are 2 sections:
 2.  **Additional functions:** Functions that will be useful for later projects
 
 ### List of functions
-Libc functions | Additional functions | Bonus Functions | Personal Functions
-:----------- | :-----------: | :-----------: | -----------:
-[ft_atoi](#ft_atoi)  |  [ft_putchar_fd](#ft_putchar_fd)  | [ft_strncmp](#ft_strncmp.c)	|           
-[ft_bzero](#ft_bzero)		|  [ft_putendl_fd](#ft_putendl_fd)  | [ft_strnstr](#ft_strnstr.c)  | 
-[ft_calloc](#ft_calloc)  	|  [ft_putnbr_fd](#ft_putnbr_fd)  | [ft_strrchr](#ft_strrchr.c)	  |  
-[ft_isalnum](#ft_isalnum) |   [ft_putstr_fd](#ft_putstr_fd)  | [ft_strtrim](#ft_strtrim.c)   | 
-[ft_isalpha](#ft_isalpha) |   [ft_split](#ft_split)      | [ft_tolower](#ft_tolower.c) | 
-[ft_isascii](#ft_isascii)	|  [ft_strchr](#ft_strchr)	 | [ft_tolower](#ft_tolower.c)	 |  
-[ft_isdigit](#ft_isdigit) |  [ft_strdup](#ft_strdup)  |     
-[ft_isprint](#ft_isprint) |	[ft_striteri.c](#ft_striteri.c)  | 
-[ft_itoa](#ft_itoa)	|  [ft_strjoin.c](#ft_strjoin.c)  |         
-[ft_memchr](#ft_memchr)	|  [ft_strlcat.c](#ft_strlcat.c)|		
-[ft_memcmp](#ft_memcmp)	|  [ft_strlen](#ft_strlen)	|			
-[ft_memmove](#ft_memmove)	|  [ft_strlen](#ft_strlen) 	| 	
-[ft_memset](#ft_memset)	|  [ft_strmapi](#ft_strmapi.c) 	| 
+Libc functions | Additional functions 
+:----------- | :-----------: 
+[ft_isalpha](#ft_isalpha) |   [ft_substr](#ft_substr)      
+[ft_isdigit](#ft_isdigit) |  [ft_strjoin](#ft_strjoin)   
+[ft_isalnum](#ft_isalnum)	|  [ft_strtrim](#ft_strtrim)  
+[ft_isascii](#ft_isascii) |  [ft_split](#ft_split)   
+[ft_isprint](#ft_isprint) |    [ft_itoa](#ft_itoa)     
+[ft_strlen](#ft_strlen)	|  [ft_strmapi](#ft_strmapi) 
+[ft_memset](#ft_memset) |   [ft_striteri](#ft_striteri)   
+[ft_bzero](#ft_bzero) |	  [ft_putchar_fd](#ft_putchar_fd)  
+[ft_memcpy](#ft_memcpy)	|   [ft_putstr_fd](#ft_putstr_fd)         
+[ft_memmove](#ft_memmove)		|  [ft_putendl_fd](#ft_putendl_fd)  	
+[ft_strlcpy](#ft_strlcpy)		|  [ft_putnbr_fd](#ft_putnbr_fd)	
+[ft_strlcat](#ft_strlcat) |  	
+[ft_toupper](#ft_toupper)	|   	
+[ft_tolower](#ft_tolower)	 |
+[ft_strchr](#ft_strchr)	  | 
+[ft_strrchr](#ft_strrchr)	  | 
+[ft_strncmp](#ft_strncmp)   |
+[ft_memcmp](#ft_memcmp)	  | 
+[ft_strnstr](#ft_strnstr)	  | 
+[ft_atoi](#ft_atoi)  |
+[ft_calloc](#ft_calloc)   |
+[ft_strdup](#ft_strdup) 
+
+
 
 ## [ft_memset](libft_42/ft_memset.c)
 
