@@ -1,5 +1,8 @@
 # libft - VyHuynh
 
+![image](https://github.com/Huynh-Vy/libft-42/assets/87691625/3cbc83a9-624a-48b0-9384-e24557ab140c)
+
+
 ### What is libft?
 
 Libft is an individual project at [42](https://www.42adel.org.au/) that requieres us to re-create some standard C library functions for future projects, and have a deeper understanding of data structures and algorithms. At 42 we are not allowed to use some standard libraries on our projects, so we have to keep growing this libary with our own functions as we go further in the program.
@@ -10,6 +13,9 @@ There are 2 sections:
 
 1.  **Libc Functions:** Some of the standard C functions
 2.  **Additional functions:** Functions that will be useful for later projects
+
+### Testing
+The functions are tested with [Francinette](https://github.com/xicodomingues/francinette)
 
 ### List of functions
 Libc functions | Additional functions 
